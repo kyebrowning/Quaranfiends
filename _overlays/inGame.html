@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/inGame.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style text="text/CSS">
+
+    @font-face {
+		src: url('../fonts/BebasNeue-Bold.otf');
+		font-family: "BebasNeue";
+	}
+
+    body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+		background: transparent;
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		font-family: "BebasNeue";
+        color: white;
+    }
+
+    #player1Camera, #player2Camera {
+        border: solid 5px #1e374b;
+        width: 320px;
+        height: 180px;
+    }
+
+    #player1Camera {
+        position: absolute;
+        left: 10px;
+        top: 885px;
+    }
+
+    #player2Camera {
+        position: absolute;
+        top: 885px;
+        left: 1580px;
+    }
+
+    #player1Wrapper, #player2Wrapper {
+        width: 280px;
+        height: 40px;
+        background-color: #1e374b;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    #player1Wrapper {
+        position: absolute;
+        top: 1030px;
+        left: 10px;
+    }
+
+    #player2Wrapper {
+        position: absolute;
+        top: 1030px;
+        left: 1630px;
+    }
+
+    .scoreBox {
+        background-color: #1e374b;
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 1020px;
+        color: #ffdc4b;
+        text-align: center;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    #p1ScoreBox {
+        left: 280px;
+    }
+
+    #p2ScoreBox {
+        left: 1580px;
+    }
+
+    .teams {
+        color: #ffcc0c;
+    }
+
+    #bestOf {
+        width:225px;
+        height: 40px;
+        position: absolute;
+        top: 985px;
+        left: 847px;
+        background-color: #1e374b;
+        opacity: .75 ;
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    #bestOfTextBox {
+        width: 215px;
+        height: 40px;
+        text-align: center;
+        position: absolute;
+        left:5px
+    }
+
+    #tournamentLogo {
+        position: absolute;
+        left: 847px;
+        top: 941px;
+
+    }
+
+    #streamName {
+        position: absolute;
+        font-size: 32px;
+        color: #2d506e;
+        text-align: center;
+        bottom: 15px;
+        width: 1920px;
+    }
+
+</style> 
+<body>
+    <div id="player1Camera"></div>
+    <div id="player1Wrapper">
+        <span id="player1Team" class="teams"></span>
+        <span id="player1Name" class="names"></span>
+    </div>
+    <div id="p1ScoreBox" class="scoreBox">
+        <span id="player1Score"></span>
+    </div>
+
+
+    <div id="player2Camera"></div>
+    <div id="player2Wrapper">
+        <span id="player2Team" class="teams"></span>
+        <span id="player2Name" class="names"></span> 
+    </div>
+    <div id="p2ScoreBox" class="scoreBox">
+        <span id="player2Score"></span>
+    </div>
+
+    <img id="tournamentLogo" src="../imgs/QuaranfiendsName.png" height="auto" width="225px">
+    <div id="bestOf">
+        <div id="bestOfTextBox"></div>
+    </div>
+
+    <div id="streamName">
+        <span>www.smash.gg/qf</span>
+    </div>
+</body>
+</html>

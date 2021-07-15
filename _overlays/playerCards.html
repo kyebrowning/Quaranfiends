@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../js/playerCards.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <style text="text/CSS">
+
+    @font-face {
+		src: url('../fonts/BebasNeue-Bold.otf');
+		font-family: "BebasNeue";
+	}
+
+    body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+		background: transparent;
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		font-family: "BebasNeue";
+        color: #2d506e;
+    }
+
+    .overlay {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+        z-index: -1;
+	}
+
+    #player1Card, #player2Card {
+        width: 775px;
+        height: 115px;
+        background-color: #ffdc4c;
+        z-index: 3;
+    }
+
+    #player1Card{
+        position: absolute;
+        left: 0px;
+        top: 832px;
+        
+    }
+
+    #player2Card {
+        position: absolute;
+        left: 1147px;
+        top: 832px;
+    }
+
+    #player1Team, #player2Team{
+        color: #1e374b;
+    }
+
+    #p1SB1, #p1SB2, #p1SB3, #p2SB1, #p2SB2, #p2SB3{
+        height: 25px;
+        width: 25px;
+        background-color: #2d506e;
+        z-index: 3;
+    }
+
+    #p1SB1{
+        position: absolute;
+        top: 832px;
+        left: 804px;
+    }
+
+    #p1SB2{
+        position: absolute;
+        top: 878px;
+        left: 804px;
+    }
+
+    #p1SB3{
+        position: absolute;
+        top: 923px;
+        left: 804px;
+    }
+
+    #p2SB1{
+        position: absolute;
+        top: 832px;
+        left: 1085px;
+    }
+
+    #p2SB2{
+        position: absolute;
+        top: 878px;
+        left: 1085px;
+    }
+
+    #p2SB3{
+        position: absolute;
+        top: 923px;
+        left: 1085px;
+    }
+
+    #player1Wrapper, #player2Wrapper {
+        position: absolute;
+        top: 10px;
+		width: 770px;
+		height: 110px;
+		line-height: 100px;
+		font-size: 98px;
+        text-align: center;
+    }
+
+    #player1Character, #player2Character{
+        position: absolute;
+        height: 800px;
+        width: 800px;
+        z-index: 1;
+        top: 150px;
+        text-align: center;
+    }
+
+    #player1Character{
+        left: 50px;
+    }
+    
+    #player2Character {
+        right: 50px;
+    }
+
+    #streamName {
+        position: absolute;
+        font-size: 32px;
+        color: #ffdc4c;
+        text-align: center;
+        bottom: 25px;
+        width: 1920px;
+    }
+
+
+    </style>
+    <body>
+        <div id="overlayBKG">
+            <img src="../imgs/PlayerCards-BKG.png" class="overlay"></img>
+        </div>
+        <div id="player1Card">
+            <div id="player1Wrapper">
+                <span id ="player1Team"></span>
+                <span id ="player1Name"></span>
+            </div>
+            
+        </div>
+        <div id="player1Character"></div>
+        <div class="player1ScoreBoxes">
+            <div id="p1SB1"></div>
+            <div id="p1SB2"></div>
+            <div id="p1SB3"></div>
+        </div>
+        <div id="player2Card">
+            <div id="player2Wrapper">
+                <span id ="player2Team"></span>
+                <span id ="player2Name"></span>
+            </div>
+        </div>
+        <div id="player2Character"></div>
+        <div class="player2ScoreBoxes">
+            <div id="p2SB1"></div>
+            <div id="p2SB2"></div>
+            <div id="p2SB3"></div>
+        </div>
+
+        <div id="streamName">
+            <span>www.smash.gg/qf</span>
+        </div>
+    </body>
+</html>

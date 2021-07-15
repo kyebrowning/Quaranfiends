@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/wideCameraWithScores.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style text="text/CSS">
+
+    @font-face {
+		src: url('../fonts/BebasNeue-Bold.otf');
+		font-family: "BebasNeue";
+	}
+
+    body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+		background: transparent;
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		font-family: "BebasNeue";
+        color: #2d506e;
+    }
+
+    #cameraBorder{
+        border: 15px solid #1e374b;
+        width: 1890px;
+        height: 1050px; 
+    }
+
+    #tournamentLogo{
+        position: absolute;
+        top: 901px;
+        left: 835px
+    }
+
+    .playerBoxes {
+        width: 750px;
+        height: 100px;
+        position: absolute;
+        top: 930px;
+    }
+
+    #player1Box {
+       left: 10px;
+       font-size: 90px;
+       text-align: right;
+    }
+
+    #player2Box {
+        left: 1160px;
+        text-align: left;
+        font-size: 90px;
+    }
+
+    .teams {
+        color:#1e374b;
+    }
+
+    .names {
+        color:#2d506e;
+    }
+
+    .scores {
+        color: #fecc08;
+    }
+
+    #streamName {
+        position: absolute;
+        font-size: 32px;
+        color:#1e374b;
+        text-align: center;
+        top: 25px;
+        width: 1920px;
+    }
+
+</style>
+<body>
+
+<div id="cameraBorder"></div>
+<div id="streamName">
+    <span>www.smash.gg/qf</span>
+</div>
+<img id="tournamentLogo" src="../imgs/Quaranfiends_Logo_withName.png" width="250px" height="auto">
+
+<div id="player1Box" class="playerBoxes">
+    <span id="p1Team" class="teams"></span>
+    <span id="p1Name" class="names"></span>
+    <span id="p1Score" class="scores"></span>
+</div>
+
+<div id="player2Box" class="playerBoxes">
+    <span id="p2Score" class="scores"></span>
+    <span id="p2Team" class="teams"></span>
+    <span id="p2Name" class="names"></span>
+</div>
+    
+</body>
+</html>

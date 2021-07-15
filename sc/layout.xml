@@ -1,0 +1,206 @@
+<!DOCTYPE StreamControlLayout>
+<layout width="750" height="200" tabbed="1">
+  <tab name="Singles Match Info">
+    <label x="10" y="14" width="46" height="13">Player 1</label>
+    <label x="665" y="14" width="46" height="13">Player 2</label>
+    <label x="10" y="74" width="46" height="13">Round</label>
+    <lineEdit id="p1Name" x="60" y="10" width="170" height="20" dataSet="players.csv" dataField="1" />
+    <lineEdit id="p1Team" x="240" y="10" width="60" height="20" dataSet="players.csv" dataField="2" master="p1Name" />
+    <spinBox id="p1Score" x="310" y="9" width="40" height="25" maximum="3" />
+    <comboBox id="p1Character" x="60" y="40" width="170" height="20" >
+      <comboItem>Alph</comboItem>
+      <comboItem>Banjo</comboItem>
+      <comboItem>Bayonetta</comboItem>
+      <comboItem>Bowser</comboItem>
+      <comboItem>BowserJr</comboItem>
+      <comboItem>BylethFemale</comboItem>
+      <comboItem>BylethMale</comboItem>
+      <comboItem>CaptainFalcon</comboItem>
+      <comboItem>Chrom</comboItem>
+      <comboItem>Cloud</comboItem>
+      <comboItem>CorrinFemale</comboItem>
+      <comboItem>CorrinMale</comboItem>
+      <comboItem>Daisy</comboItem>
+      <comboItem>DarkPit</comboItem>
+      <comboItem>DarkSamus</comboItem>
+      <comboItem>DiddyKong</comboItem>
+      <comboItem>DonkeyKong</comboItem>
+      <comboItem>DrMario</comboItem>
+      <comboItem>DuckHunt</comboItem>
+      <comboItem>Falco</comboItem>
+      <comboItem>Fox</comboItem>
+      <comboItem>GandW</comboItem>
+      <comboItem>Ganondorf</comboItem>
+      <comboItem>Greninja</comboItem>
+      <comboItem>Hero</comboItem>
+      <comboItem>IceClimbers</comboItem>
+      <comboItem>Ike</comboItem>
+      <comboItem>Incineroar</comboItem>
+      <comboItem>Inkling</comboItem>
+      <comboItem>Isabelle</comboItem>
+      <comboItem>Jigglypuff</comboItem>
+      <comboItem>Joker</comboItem>
+      <comboItem>Kazuya</comboItem>
+      <comboItem>Ken</comboItem>
+      <comboItem>KingDedede</comboItem>
+      <comboItem>KingKRool</comboItem>
+      <comboItem>Kirby</comboItem>
+      <comboItem>Link</comboItem>
+      <comboItem>LittleMac</comboItem>
+      <comboItem>Lucario</comboItem>
+      <comboItem>Lucas</comboItem>
+      <comboItem>Lucina</comboItem>
+      <comboItem>Luigi</comboItem>
+      <comboItem>Mario</comboItem>
+      <comboItem>Marth</comboItem>
+      <comboItem>MegaMan</comboItem>
+      <comboItem>MetaKnight</comboItem>
+      <comboItem>Mewtwo</comboItem>
+      <comboItem>MiiBrawler</comboItem>
+      <comboItem>MiiGunner</comboItem>
+      <comboItem>MiiSwordfigher</comboItem>
+      <comboItem>MinMin</comboItem>
+      <comboItem>Mythra</comboItem>
+      <comboItem>Ness</comboItem>
+      <comboItem>Olimar</comboItem>
+      <comboItem>PacMan</comboItem>
+      <comboItem>Palutena</comboItem>
+      <comboItem>Peach</comboItem>
+      <comboItem>Pichu</comboItem>
+      <comboItem>Pikachu</comboItem>
+      <comboItem>PiranhaPlant</comboItem>
+      <comboItem>Pit</comboItem>
+      <comboItem>PokemonTrainer</comboItem>
+      <comboItem>Pyra</comboItem>
+      <comboItem>Richter</comboItem>
+      <comboItem>Ridley</comboItem>
+      <comboItem>ROB</comboItem>
+      <comboItem>RobinFemale</comboItem>
+      <comboItem>RobinMale</comboItem>
+      <comboItem>Rosalina</comboItem>
+      <comboItem>Roy</comboItem>
+      <comboItem>Ryu</comboItem>
+      <comboItem>Samus</comboItem>
+      <comboItem>Sephiroth</comboItem>
+      <comboItem>Sheik</comboItem>
+      <comboItem>Shulk</comboItem>
+      <comboItem>Simon</comboItem>
+      <comboItem>Snake</comboItem>
+      <comboItem>Sonic</comboItem>
+      <comboItem>Steve</comboItem>
+      <comboItem>Terry</comboItem>
+      <comboItem>ToonLink</comboItem>
+      <comboItem>Villager</comboItem>
+      <comboItem>Wario</comboItem>
+      <comboItem>WiiFitTrainer</comboItem>
+      <comboItem>Wolf</comboItem>
+      <comboItem>Yoshi</comboItem>
+      <comboItem>YoungLink</comboItem>
+      <comboItem>Zelda</comboItem>
+      <comboItem>ZZS</comboItem> 
+    </comboBox>
+    <spinBox id="p2Score" x="360" y="9" width="40" height="25" maximum="3" />
+    <lineEdit id="p2Name" x="410" y="10" width="170" height="20" dataSet="players.csv" dataField="1" />
+    <lineEdit id="p2Team" x="590" y="10" width="60" height="20" dataSet="players.csv" dataField="2" master="p2Name" />
+    <comboBox id="p2Character" x="410" y="40" width="170" height="20" >
+      <comboItem>Alph</comboItem>
+      <comboItem>Banjo</comboItem>
+      <comboItem>Bayonetta</comboItem>
+      <comboItem>Bowser</comboItem>
+      <comboItem>BowserJr</comboItem>
+      <comboItem>BylethFemale</comboItem>
+      <comboItem>BylethMale</comboItem>
+      <comboItem>CaptainFalcon</comboItem>
+      <comboItem>Chrom</comboItem>
+      <comboItem>Cloud</comboItem>
+      <comboItem>CorrinFemale</comboItem>
+      <comboItem>CorrinMale</comboItem>
+      <comboItem>Daisy</comboItem>
+      <comboItem>DarkPit</comboItem>
+      <comboItem>DarkSamus</comboItem>
+      <comboItem>DiddyKong</comboItem>
+      <comboItem>DonkeyKong</comboItem>
+      <comboItem>DrMario</comboItem>
+      <comboItem>DuckHunt</comboItem>
+      <comboItem>Falco</comboItem>
+      <comboItem>Fox</comboItem>
+      <comboItem>GandW</comboItem>
+      <comboItem>Ganondorf</comboItem>
+      <comboItem>Greninja</comboItem>
+      <comboItem>Hero</comboItem>
+      <comboItem>IceClimbers</comboItem>
+      <comboItem>Ike</comboItem>
+      <comboItem>Incineroar</comboItem>
+      <comboItem>Inkling</comboItem>
+      <comboItem>Isabelle</comboItem>
+      <comboItem>Jigglypuff</comboItem>
+      <comboItem>Joker</comboItem>
+      <comboItem>Kazuya</comboItem>
+      <comboItem>Ken</comboItem>
+      <comboItem>KingDedede</comboItem>
+      <comboItem>KingKRool</comboItem>
+      <comboItem>Kirby</comboItem>
+      <comboItem>Link</comboItem>
+      <comboItem>LittleMac</comboItem>
+      <comboItem>Lucario</comboItem>
+      <comboItem>Lucas</comboItem>
+      <comboItem>Lucina</comboItem>
+      <comboItem>Luigi</comboItem>
+      <comboItem>Mario</comboItem>
+      <comboItem>Marth</comboItem>
+      <comboItem>MegaMan</comboItem>
+      <comboItem>MetaKnight</comboItem>
+      <comboItem>Mewtwo</comboItem>
+      <comboItem>MiiBrawler</comboItem>
+      <comboItem>MiiGunner</comboItem>
+      <comboItem>MiiSwordfigher</comboItem>
+      <comboItem>MinMin</comboItem>
+      <comboItem>Mythra</comboItem>
+      <comboItem>Ness</comboItem>
+      <comboItem>Olimar</comboItem>
+      <comboItem>PacMan</comboItem>
+      <comboItem>Palutena</comboItem>
+      <comboItem>Peach</comboItem>
+      <comboItem>Pichu</comboItem>
+      <comboItem>Pikachu</comboItem>
+      <comboItem>PiranhaPlant</comboItem>
+      <comboItem>Pit</comboItem>
+      <comboItem>PokemonTrainer</comboItem>
+      <comboItem>Pyra</comboItem>
+      <comboItem>Richter</comboItem>
+      <comboItem>Ridley</comboItem>
+      <comboItem>ROB</comboItem>
+      <comboItem>RobinFemale</comboItem>
+      <comboItem>RobinMale</comboItem>
+      <comboItem>Rosalina</comboItem>
+      <comboItem>Roy</comboItem>
+      <comboItem>Ryu</comboItem>
+      <comboItem>Samus</comboItem>
+      <comboItem>Sephiroth</comboItem>
+      <comboItem>Sheik</comboItem>
+      <comboItem>Shulk</comboItem>
+      <comboItem>Simon</comboItem>
+      <comboItem>Snake</comboItem>
+      <comboItem>Sonic</comboItem>
+      <comboItem>Steve</comboItem>
+      <comboItem>Terry</comboItem>
+      <comboItem>ToonLink</comboItem>
+      <comboItem>Villager</comboItem>
+      <comboItem>Wario</comboItem>
+      <comboItem>WiiFitTrainer</comboItem>
+      <comboItem>Wolf</comboItem>
+      <comboItem>Yoshi</comboItem>
+      <comboItem>YoungLink</comboItem>
+      <comboItem>Zelda</comboItem>
+      <comboItem>ZZS</comboItem> 
+    </comboBox>
+    <lineEdit id="round" x="60" y="70" width="170" height="20" dataSet="round.csv" dataField="1" />
+    <radioGroup id="bestOf">
+      <radioButton x="240" y="75" width="50" height="20" value="Best of 3">Bo3</radioButton>
+      <radioButton x="300" y="75" width="50" height="20" value="Best of 5">Bo5</radioButton>
+    </radioGroup>
+    <button type="swap" x="365" y="70" width="90" height="25" tooltip="Swap the Scores" id="swap1" swapSet1="p1Character,p1Team,p1Name,p1Score" swapSet2="p2Character,p2Team,p2Name,p2Score">Swap</button>
+    <button type="reset" x="465" y="70" width="115" height="25" tooltip="Reset the Scores" id="reset1" reset="p1Score,p2Score">Reset Scores</button>
+    <button type="reset" x="590" y="70" width="115" height="25" tooltip="Clear Everything" id="reset2" reset="p1Team,p1Name,p1Score,p2Team,p2Name,p2Score">Clear Everything</button>
+  </tab>
+</layout>
